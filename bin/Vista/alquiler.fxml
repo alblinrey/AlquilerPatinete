@@ -7,18 +7,17 @@
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.layout.VBox?>
 
-
-<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" spacing="10.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controlador.AlquilerController">
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" spacing="10.0" xmlns="http://javafx.com/javafx/23" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controlador.AlquilerController">
    <children>
       <Label contentDisplay="TOP" maxWidth="Infinity" text=" Nombre Completo" />
-      <TextField />
+      <TextField fx:id="nombreCompleto" />
       <Label maxWidth="Infinity" text="Numero de serie" />
-      <TextField />
+      <TextField fx:id="numeroSerie" />
       <Label maxWidth="Infinity" text="Fecha de recogida" />
-      <DatePicker />
+      <DatePicker fx:id="fechaRecogida" />
       <Label maxWidth="Infinity" text="Fecha de devolución" />
-      <DatePicker />
-      <Button mnemonicParsing="false" onAction="#handleButtonAction" text="Guardar" />
+      <DatePicker fx:id="fechaDevolucion" />
+      <Button fx:id="botonAlquiler" mnemonicParsing="false" onAction="#handleButtonAction" text="Guardar" />
    </children>
    <padding>
       <Insets bottom="25.0" left="25.0" right="25.0" top="25.0" />
